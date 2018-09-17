@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Новостная страница с ID - <%= newsId %></title>
+</head>
+<body>
+  <% include blocks/header.ejs %>
+  <h2>Новостная страница с ID - <%= newsId %></h2>
+  <p><b>Title:</b><%= obj.title %></p>
+  <p><b>ID:</b><%= obj.id %></p>
+  <ul>
+    <% obj.paragraphs.forEach(function(item){%>
+    <li><%= item%></li>
+    <%});%>
+  </ul>
+  <p>Геотекстиль 2 рулона по 1940р = 3880 <br>
+Брусок 40шт по 160р = 6400 <br>
+Отсев 4м3 = 6000р <br>
+Песок 44м3 по 470р = 20680 <br>
+Саид касимово 3000р <br>
+Расходники для санузлов 9000р <br>
+Итого 48960р</p>
+</body>
+</html>
